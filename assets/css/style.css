@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+
+
+:root {
+    --theme_color: hsl(0, 56%, 40%);
+    --first-color: rgb(244, 62, 62);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body,nav
+{
+    /* background-color: rgb(128, 113, 180) */
+    background-color: #6693BE;
+}
+
+
+/*Resuable Classes*/
+.text-theme {
+    color: var(--theme_color);
+}
+
+.text-first {
+    color: var(--first-color)
+}
+
+.bg-first {
+    background: var(--first-color);
+}
+
+.text-shadow-sm
+{
+    text-shadow: -1px 1.5px 2px rgba(0,0,0,0.3);
+}
+/*Modification on Bootstrap*/
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px var(--theme_color)
+}
+
+.nav-link {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Font Awesome Additions*/
+.contact-buttons i
+{
+    transition: all 0.2s ease-in-out;
+}
+.contact-buttons i:hover
+{
+    scale: 120%;
+}
+
+
+#home svg
+{
+    width: 14rem;
+    height: 2.8rem;
+}
+.iti
+{
+    width: 1rem;
+    margin:0 0 10px 0;
+    fill: #BF272D;
+}
+svg text {
+    animation: stroke 2s 1 alternate;
+    stroke-width: 2;
+    fill: var(--bs-light);
+}
+
+.about_text
+{
+    font-size: large;
+    line-height: 1.7 !important;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: var(--bs-light);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: var(--bs-light);
+    }
+
+    80% {
+        fill: rgba(72, 138, 204, 0);
+        stroke: var(--bs-light);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: var(--bs-light);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
