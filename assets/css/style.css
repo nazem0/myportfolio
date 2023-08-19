@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+  
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: rgba(63, 108, 149,0.4);
+}
 
+::-webkit-scrollbar-thumb {
+    background: var(--bs-body-color);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -12,6 +25,10 @@ body,nav
     background-color: #6cb8ff;
 }
 
+main
+{
+    scrollbar-color: red yellow !important; 
+}
 
 /*Resuable Classes*/
 .text-shadow-sm
