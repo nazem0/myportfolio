@@ -1,19 +1,14 @@
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+const skillsContainer = document.getElementById('skills');
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-        }
-    })
+function consequentialShow(div)
+{
+let children = skillsContainer.children;
+for (let i = 0; i < children.length; i++) {
+    setTimeout(() => {
+      children[i].classList.add("pop");
+      children[i].classList.remove("d-none");
+    }, i * 400);
+  }
 }
-window.addEventListener('scroll', scrollActive) 
+
+consequentialShow(skillsContainer);

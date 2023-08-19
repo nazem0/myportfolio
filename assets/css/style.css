@@ -140,3 +140,24 @@ svg text {
         box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.4);
     }
 }
+
+.pop
+{
+    animation: suddenShow 1s 1 ease-in-out;
+}
+
+@keyframes suddenShow {
+
+    0%
+    {
+        scale: 0;
+    }
+    50%{
+        scale:1.5;
+    }
+    100%
+    {
+        scale:1;
+    }
+    
+}
