@@ -25,10 +25,6 @@ body,nav
     background-color: #6cb8ff;
 }
 
-main
-{
-    scrollbar-color: red yellow !important; 
-}
 
 /*Resuable Classes*/
 .text-shadow-sm
