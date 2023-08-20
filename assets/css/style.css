@@ -88,8 +88,8 @@ body,nav
 svg text {
     animation: stroke 2s 1 alternate;
     stroke-width: 2;
-    fill: var(--bs-light);
-}
+    fill:rgb(33, 37, 160);
+    text-shadow: -1px 1.5px 2px rgba(0,0,0,0.3)}
 
 .about_text
 {
@@ -100,29 +100,36 @@ svg text {
 @keyframes stroke {
     0% {
         fill: rgba(72, 138, 204, 0);
-        stroke: var(--bs-light);
+        stroke: rgb(33, 37, 160);
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
         stroke-width: 2;
+        text-shadow: -1px 0.1px 0.5px rgba(0,0,0,0.3)
+
     }
 
-    70% {
+    25% {
         fill: rgba(72, 138, 204, 0);
-        stroke: var(--bs-light);
+        stroke: rgb(33, 37, 160);
+        text-shadow: -1px 0.2px 1px rgba(0,0,0,0.3)
     }
 
-    80% {
+    75% {
         fill: rgba(72, 138, 204, 0);
-        stroke: var(--bs-light);
+        stroke: rgb(33, 37, 160);
         stroke-width: 3;
+        text-shadow: -1px 0.8px 2px rgba(0,0,0,0.3)
+
     }
 
     100% {
-        fill: var(--bs-light);
+        fill: rgb(33, 37, 160);
         stroke: rgba(54, 95, 160, 0);
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
         stroke-width: 0;
+        text-shadow: -1px 1.5px 2px rgba(0,0,0,0.3)
+        
     }
 }
 

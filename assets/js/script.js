@@ -16,19 +16,19 @@ function consequentialShow() {
       for (let i = 0; i < children.length; i++) {
           let display = children[i].style.display;
           console.log(display);
-          children[i].style.display = 'none';
+          children[i].style.opacity = 0;
           setTimeout(() => {
 
-              children[i].style.display = display;
+            children[i].style.opacity = 1;
 
               children[i].classList.add("pop");
-          }, i * 400);
+          }, i * 200);
       }
   };
 
 }
 let waiting = new Promise(function (resolve, reject) {ScrollReveal().reveal('.scrollReveal', { scale: 1.2,rotate: {
-  x: -5,
-  z: -5
+  x: 20,
+  z: 3
 },duration: 1000 }) });
 waiting.then(consequentialShow());
