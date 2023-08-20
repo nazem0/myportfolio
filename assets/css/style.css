@@ -60,14 +60,13 @@ body,nav
     width: 3rem;
 }
 /* Font Awesome Additions*/
-#contact-buttons i
-{
+.scale{
     transition: all 0.2s ease-in-out;
 }
-#contact-buttons i:hover
+.scale:hover
 {
     scale: 120%;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); */
 }
 
 
@@ -88,7 +87,7 @@ body,nav
 svg text {
     animation: stroke 2s 1 alternate;
     stroke-width: 2;
-    fill:rgb(33, 37, 160);
+    fill:var(--bs-primary);
     text-shadow: -1px 1.5px 2px rgba(0,0,0,0.3)}
 
 .about_text
@@ -100,7 +99,7 @@ svg text {
 @keyframes stroke {
     0% {
         fill: rgba(72, 138, 204, 0);
-        stroke: rgb(33, 37, 160);
+        stroke: var(--bs-primary);
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
         stroke-width: 2;
@@ -110,20 +109,20 @@ svg text {
 
     25% {
         fill: rgba(72, 138, 204, 0);
-        stroke: rgb(33, 37, 160);
+        stroke: var(--bs-primary);
         text-shadow: -1px 0.2px 1px rgba(0,0,0,0.3)
     }
 
     75% {
         fill: rgba(72, 138, 204, 0);
-        stroke: rgb(33, 37, 160);
+        stroke: var(--bs-primary);
         stroke-width: 3;
         text-shadow: -1px 0.8px 2px rgba(0,0,0,0.3)
 
     }
 
     100% {
-        fill: rgb(33, 37, 160);
+        fill: var(--bs-primary);
         stroke: rgba(54, 95, 160, 0);
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
