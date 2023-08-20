@@ -13,7 +13,10 @@
 ::-webkit-scrollbar-corner {
     background: #000;
 }
-
+:root
+{
+    overflow-x:hidden;
+}
 * {
     font-family: 'Poppins', sans-serif;
     
@@ -22,7 +25,7 @@
 body,nav
 {
     /* background-color: rgb(128, 113, 180) */
-    background-color: #6cb8ff;
+    background-color: rgba(240,240,240);
 }
 
 
@@ -142,25 +145,4 @@ svg text {
     {
         box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.4);
     }
-}
-
-.pop
-{
-    animation: suddenShow 1s 1 ease-in-out;
-}
-
-@keyframes suddenShow {
-
-    0%
-    {
-        scale: 0;
-    }
-    50%{
-        scale:1.5;
-    }
-    100%
-    {
-        scale:1;
-    }
-    
 }
