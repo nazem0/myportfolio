@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-  
+
 ::-webkit-scrollbar {
     height: 10px;
     width: 10px;
-    background: rgba(63, 108, 149,0.4);
+    background: rgba(63, 108, 149, 0.4);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -13,73 +13,91 @@
 ::-webkit-scrollbar-corner {
     background: #000;
 }
-:root
-{
-    overflow-x:hidden;
+
+:root {
+    overflow-x: hidden;
 }
+
 * {
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
-body,nav
-{
+body,
+nav {
     /* background-color: rgb(128, 113, 180) */
-    background-color: rgba(240,240,240);
+    background-color: rgba(240, 240, 240);
+}
+img
+{
+    max-width: 100%;
 }
 
-
-/*Resuable Classes*/
-.text-shadow-sm
+section
 {
-    text-shadow: -1px 1.5px 2px rgba(0,0,0,0.3);
+    padding: 1rem  0;
 }
-.w-80
+
+section:first-of-type
 {
+    padding: 6rem 0 1rem 0;
+}
+/* /////////////////////////////////////////////////////////  */
+.skills{
+    min-width: 40px;
+    max-width: 40px;
+}
+.text-shadow-sm {
+    text-shadow: -1px 1.5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.w-80 {
     width: 80%;
 }
-.w-90
-{
+
+.w-90 {
     width: 90%;
 }
-.border-8
-{
+
+.border-8 {
     border-width: 8px;
 }
 
-.shadow-0-0
-{
-    box-shadow: 0 .0 10px 1px rgba(0,0,0,.2)!important;
+.shadow-0-0 {
+    box-shadow: 0 .0 10px 1px rgba(0, 0, 0, .2) !important;
 }
 
 .nav-link {
     transition: all 0.2s ease-in-out;
 }
-.icon
-{
+
+.icon {
     width: 3rem;
 }
+
 /* Font Awesome Additions*/
-.scale{
+.scale {
     transition: all 0.2s ease-in-out;
 }
-.scale:hover
-{
-    scale: 120%;
+
+.scale:hover {
+    transform:scale(120%) ;
     /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); */
 }
+.myPicture{
+    max-height: 300px;
+    animation: blob 20s infinite ease-in-out;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
+}
 
-
-.my_name
-{
+.my_name {
     width: 14rem;
     height: 2.8rem;
 }
 
-.iti
-{
+.iti {
     width: 1rem;
-    margin:0 0 10px 0;
+    margin: 0 0 10px 0;
 }
 
 
@@ -87,11 +105,12 @@ body,nav
 svg text {
     animation: stroke 2s 1 alternate;
     stroke-width: 2;
-    fill:var(--bs-primary);
-    text-shadow: -1px 1.5px 2px rgba(0,0,0,0.3)}
+    fill: var(--bs-primary);
+    text-shadow: -1px 1.5px 2px rgba(0, 0, 0, 0.3)
+}
 
-.about_text
-{
+.about_text {
+    
     font-size: large;
     line-height: 1.7 !important;
 }
@@ -103,22 +122,20 @@ svg text {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
         stroke-width: 2;
-        text-shadow: -1px 0.1px 0.5px rgba(0,0,0,0.3)
-
+        text-shadow: -1px 0.1px 0.5px rgba(0, 0, 0, 0.3)
     }
 
     25% {
         fill: rgba(72, 138, 204, 0);
         stroke: var(--bs-primary);
-        text-shadow: -1px 0.2px 1px rgba(0,0,0,0.3)
+        text-shadow: -1px 0.2px 1px rgba(0, 0, 0, 0.3)
     }
 
     75% {
         fill: rgba(72, 138, 204, 0);
         stroke: var(--bs-primary);
         stroke-width: 3;
-        text-shadow: -1px 0.8px 2px rgba(0,0,0,0.3)
-
+        text-shadow: -1px 0.8px 2px rgba(0, 0, 0, 0.3)
     }
 
     100% {
@@ -127,28 +144,38 @@ svg text {
         stroke-dashoffset: -25%;
         stroke-dasharray: 50% 0;
         stroke-width: 0;
-        text-shadow: -1px 1.5px 2px rgba(0,0,0,0.3)
-        
+        text-shadow: -1px 1.5px 2px rgba(0, 0, 0, 0.3)
     }
 }
 
 
 
-.sun
-{
-    animation: breathing 3s infinite ease;
+
+.pop {
+    animation: suddenShow 1.2s 1 ease;
 }
-@keyframes breathing {
+
+@keyframes suddenShow {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blob {
     0%
     {
-        box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.4);
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
     }
     50%
     {
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%   ;
     }
     100%
     {
-        box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.4);
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     }
 }

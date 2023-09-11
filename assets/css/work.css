@@ -1,0 +1,9 @@
+
+.icons
+{
+}
+.icon-containers>div
+{
+    display: flex;
+    justify-content: center;
+}
